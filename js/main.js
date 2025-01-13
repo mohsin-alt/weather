@@ -29,7 +29,7 @@ function showweatherDetails(event) {
 
         const formattedDate = dateObject.toLocaleDateString("en-US", options);
 
-        card.innerHTML += `<div class="upper"><div>${formattedDate}</div><div>${year}</div><div><img src='../images/${x.weather}.png'/></div></div><div class="bottom"><div>${x.weather}</div><div>H:${x.temp2m.max}&deg;C</div><div>L:${x.temp2m.min}&deg;C</div></div>`;
+        card.innerHTML += `<div class="upper"><div>${formattedDate}</div><div>${year}</div><div><img src='./images/${x.weather}.png'/></div></div><div class="bottom"><div>${x.weather}</div><div>H:${x.temp2m.max}&deg;C</div><div>L:${x.temp2m.min}&deg;C</div></div>`;
         weatherInfo.appendChild(card);
       });
 
